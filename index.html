@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crocs Korea</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- 오픈 그래프 -->
+    <meta property="og:type" content="website" />
+<meta property="og:site_name" content="Crocs" />
+<meta property="og:title" content="Crocs Korea" />
+<meta property="og:description" content="크록스 코리아 공식 홈페이지 ㅣ 크록스 공식 온라인 스토어" />
+<meta property="og:image" content="./IMG/crocs_logo.png" />
+<meta property="og:url" content="https://www.crocs.co.kr/" />
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:site" content="Starbucks" />
+<meta property="twitter:title" content="Starbucks Coffee Korea" />
+<meta property="twitter:description" content="크록스 코리아 공식 홈페이지 ㅣ 크록스 공식 온라인 스토어" />
+<meta property="twitter:image" content="./IMG/crocs_logo.png" />
+<meta property="twitter:url" content="https://www.crocs.co.kr/" />
+
+<!-- 폰트 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- 아이콘 -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+<!-- gsap -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script> -->
+
+<!-- gsap scroll to plugin -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
+
+<!-- swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+  <!--ScrollMagic-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
+<!-- css -->
+<link rel="stylesheet" href="./css/main.css">
+<!-- js -->
+<script defer src="./main.js"></script>
+
+</head>
+<body>
+<!-- 상단 멤버십 클럽 배너 -->
+    <section class="top-banner" id="topBanner">
+        <a href="javascript:void(0)" id="bannerLink">CROCS MEMBERSHIP CLUB 15% DISCOUNT</a>
+        <div class="material-symbols-outlined" onclick="toggleBanner()">Close</div>
+    </section>
+
+    <!-- 헤더메뉴 -->
+    <header id="header">
+        
+        <div class="inner">
+            
+            <div class="mobilemenu">
+                <a href="#" class="material-symbols-outlined">Menu</a>
+            </div>
+
+            <a href="/" class="logo">
+                <img src="./IMG/crocs_logo.png" alt="CROCS">
+            </a>
+            
+            <ul class="main-menu">
+                <li class="item">
+                    <div class="item__name">Woman</div>
+                    <div class="item__contents">
+                        <div class="contents__menu">
+                            <ul class="inner">
+                                <li>
+                                    <h4>슈즈 종류</h4>
+                                    <ul>
+                                        <li>털안감 라인드 클로그</li>
+                                        <li>클로그</li>
+                                        <li>샌들 / 웨지</li>
+                                        <li>부츠</li>
+                                        <li>플랫 / 로퍼</li>
+                                        <li>지비츠 참</li>
+                                        <li>양말</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h4>여성 컬랙션</h4>
+                                    <ul>
+                                        <li>클래식</li>
+                                        <li>퍼에버 크러쉬</li>
+                                        <li>딜런 버니쉬드</li>
+                                        <li>스톰프</li>
+                                        <li>라인드 익스클루시브</li>
+                                        <li>하이츠</li>
+                                        <li>온라인 익스클루시브</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item__name">Man</div>
+                    <div class="item__contents">
+                        <div class="contents__menu">
+                            <ul class="inner">
+                                <li>
+                                    <h4>슈즈 종류</h4>
+                                    <ul>
+                                        <li>털안감 라인드 클로그</li>
+                                        <li>클로그</li>
+                                        <li>샌들 / 웨지</li>
+                                        <li>부츠</li>
+                                        <li>플랫 / 로퍼</li>
+                                        <li>지비츠 참</li>
+                                        <li>양말</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h4>남성 컬랙션</h4>
+                                    <ul>
+                                        <li>클래식</li>
+                                        <li>퍼에버 크러쉬</li>
+                                        <li>딜런 버니쉬드</li>
+                                        <li>스톰프</li>
+                                        <li>라인드 익스클루시브</li>
+                                        <li>하이츠</li>
+                                        <li>온라인 익스클루시브</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item__name">Kids</div>
+                    <div class="item__contents">
+                        <div class="contents__menu">
+                            <ul class="inner">
+                                <li>
+                                    <h4>토틀러(165mm 이하)</h4>
+                                    <ul>
+                                        <li>클로그</li>
+                                        <li>샌들 / 웨지</li>
+                                        <li>부츠</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h4>키즈 (175mm 이하)</h4>
+                                    <ul>
+                                        <li>클로그</li>
+                                        <li>샌들 / 웨지</li>
+                                        <li>부츠</li>
+                                    </ul>
+                                    <li>
+                                        <h4>키즈 컬랙션</h4>
+                                        <ul>
+                                            <li>라이트닝 맥퀸</li>
+                                            <li>스타워즈</li>
+                                            <li>털안감 슈즈</li>
+                                            <li>클래식</li>
+                                            <li>캐릭터/라이센스</li>
+                                            <li>LED 컬렉션</li>
+                                            <li>온라인 익스클루시브</li>
+                                        </ul>
+                                    </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item__name">Jibits Charms</div>
+                    <div class="item__contents">
+                        <div class="contents__menu">
+                            <ul class="inner">
+                                <li>
+                                    <h4>지비츠 참 컬렉션</h4>
+                                    <ul>
+                                        <li>캐릭터</li>
+                                        <li>메탈 & 주얼리</li>
+                                        <li>동물 & 식물</li>
+                                        <li>심볼 & 메세지</li>
+                                        <li>한국 단독 K 지비츠 참</li>
+                                        <li>라이센스 지비츠 참</li>
+                                        <li>LED 지비츠 참</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h4>신상품</h4>
+                                    <ul>
+                                        <li>클래식</li>
+                                        <li>퍼에버 크러쉬</li>
+                                        <li>딜런 버니쉬드</li>
+                                        <li>스톰프</li>
+                                        <li>라인드 익스클루시브</li>
+                                        <li>하이츠</li>
+                                        <li>온라인 익스클루시브</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item__name">Sale</div>
+                    <div class="item__contents">
+                        <div class="contents__menu">
+                            <ul class="inner">
+                                <li>
+                                    <h4>가격대</h4>
+                                    <ul>
+                                        <li>1만원 이하</li>
+                                        <li>10,000~20,000</li>
+                                        <li>20,000~30,000</li>
+                                        <li>30,000~40,000</li>
+                                        <li>40,000~50,000</li>
+                                        <li>50,000원 이상</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+
+            <ul class="menu">
+                <li>
+                    <a href="javascript:void(0)" class="login">Log In / Join</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="material-symbols-outlined">Favorite</a>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0)" class="material-symbols-outlined">Shopping_Cart</a>
+                </li>
+
+                <div class="search">
+                    <div class="search__name"><div class="material-symbols-outlined">Search</div></div>
+                    <div class="search__contents"></div>
+                </div>
+            </ul>
+
+        </div>
+    </header>
+
+    <!-- 비주얼섹션 1-->
+    <section class="visual">
+        <div class="inner">
+            <div class="fade-in">
+                <img src="./IMG/aespa_crocs.png" alt="aespa crocs" class="aespa_crocs_img">
+            </div>
+            <div class="fade-in">
+                <img src="./IMG/aespa_crocs_discription.png" alt="aespa crocs discription" class="aespa_text">
+            </div>
+            <div class="fade-in">
+                <a href="'#" class="btn">에스파x크록스 구매하기</a>
+            </div>
+        </div>
+    </section>
+    
+        <!-- 비주얼섹션 2-->
+        <section class="visual2 scroll-spy">
+            <div class="inner">
+                <img src="./IMG/aespa.png" alt="aespa" class="aespa_img back-to-position to-left">
+                <img src="./IMG/aespa_crocs_discription2.png" alt="aespa discription" class="aespa_text2 back-to-position to-right">
+            </div>
+        </section>
+
+
+        <!-- 프로모션 -->
+        <div class="promotion">
+            <div class="inner">
+                <h4>COLLECTION</h4>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./IMG/slide1.png" alt="car">
+                            <a href="#" class="btn">구매하기</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./IMG/slide2.png" alt="car">
+                            <a href="#" class="btn">구매하기</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./IMG/slide3.png" alt="car">
+                            <a href="#" class="btn">구매하기</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./IMG/slide4.png" alt="car">
+                            <a href="#" class="btn">구매하기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-prev">
+                    <img src="./IMG/prev.png" alt="">
+                </div>
+                <div class="swiper-next">
+                    <img src="./IMG/next.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- 콜라보  -->
+        <div class="collaboration">
+            <div class="inner">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./IMG/starwars.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./IMG/pokemon.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./IMG/shrek.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./IMG/kitty.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- 프로덕트 -->
+        <div class="products ">
+            <h4>PRODUCTS</h4>
+            <div class="inner">
+                <div class="product1">
+                    <img src="./IMG/crocs1.png" alt="">
+                    <h6>온라인 한정</h6>
+                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                    <p>₩109,000</p>
+                </div>
+                <div class="product2">
+                    <img src="./IMG/crocs2.png" alt="">
+                    <h6>온라인 한정</h6>
+                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                    <p>₩109,000</p>
+                </div>
+                <div class="product3">
+                    <img src="./IMG/crocs3.png" alt="">
+                    <h6>온라인 한정</h6>
+                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                    <p>₩109,000</p>
+                </div>
+                <div class="product4">
+                    <img src="./IMG/crocs4.png" alt="">
+                    <h6>온라인 한정</h6>
+                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                    <p>₩109,000</p>
+                </div>
+                <div class="product5">
+                    <img src="./IMG/crocs5.png" alt="">
+                    <h6>온라인 한정</h6>
+                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                    <p>₩109,000</p>
+                </div>
+                <div class="product6">
+                    <img src="./IMG/crocs6.png" alt="">
+                    <h6>온라인 한정</h6>
+                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                    <p>₩109,000</p>
+                </div>
+                <div class="product7">
+                    <img src="./IMG/crocs7.png" alt="">
+                    <h6>온라인 한정</h6>
+                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                    <p>₩109,000</p>
+                </div>
+                <div class="product8">
+                    <img src="./IMG/crocs8.png" alt="">
+                    <h6>온라인 한정</h6>
+                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                    <p>₩109,000</p>
+                </div>
+                <div class="product9">
+                    <img src="./IMG/crocs9.png" alt="">
+                    <h6>온라인 한정</h6>
+                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                    <p>₩109,000</p>
+                </div>
+            </div>
+        </div>
+
+<!-- 푸터 -->
+<footer>
+    <div class="inner">
+
+      <ul class="menu">
+        <li><a href="javascript:void(0)" class="green">개인정보처리방침</a></li>
+        <li><a href="javascript:void(0)">개인 정보 보호 설정</a></li>
+        <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
+        <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
+      </ul>
+
+      <div class="btn-group">
+        <a href="javascript:void(0)" class="btn btn--white">매장찾기</a>
+        <a href="javascript:void(0)" class="btn btn--white">신규입점제의</a>
+        <a href="javascript:void(0)" class="btn btn--white">사이트 맵</a>
+      </div>
+
+      <div class="info">
+        <span>사업자등록번호: 106-86-52611</span>
+        <span>(주)크록스 코리아 대표이사 양승준</span>
+        <span>고객상담실 : 1661-0677</span>
+        <span>개인정보 책임자 : 양승준</span>
+      </div>
+
+      <p class="copyright">
+        &copy; <span class="this-year"></span> Designer KMY. All Rights Reserved.
+      </p>
+      <p>KCP 구매안전 서비스(채무지급보증)고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한KCP 구매안전서비스 <a href="javascript:void(0)">(지급보증서)</a>를 이용하실 수 있습니다.</p>
+      <img src="./IMG/crocs_logo_gray.png" alt="CROCS" class="logo" />
+    </div>
+  </footer>
+        
+        <div id="to-top">
+            <div class="material-symbols-outlined">arrow_upward</div>
+        </div>
+</html>
