@@ -10,11 +10,6 @@ a {
 img {
     display: block;
 }
-.inner {
-    width: 1755px;
-    margin: auto;
-    position: relative;
-}
 
 .btn {
     width: auto;
@@ -113,7 +108,9 @@ header {
 }
 
 header > .inner {
-    display: flex;
+    width: 1755px;
+    margin: auto;
+    position: relative;
 }
 
 header .mobilemenu {
@@ -153,7 +150,8 @@ header .main-menu .item {
 header .main-menu .item .item__name {
     color: white;
     height: 65px;
-    padding-right: 25px;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
     font-size: 13px;
     font-weight: 700;
     cursor: pointer;
@@ -180,7 +178,16 @@ header .main-menu .item:hover .item__contents .box {}
 
 header .main-menu .item .item__contents .contents__menu {
     background-color:rgba(0,0,0,.5);
+    padding-left: 12.5px;
 }
+
+
+header .main-menu .item .item__contents .contents__menu .inner {
+    width: 1755px;
+    margin: auto;
+    position: relative;
+}
+
 
 header .main-menu .item .item__contents .contents__menu > ul {
     display: flex;
@@ -269,29 +276,34 @@ header .menu .search .material-symbols-outlined:hover {
 .visual {
     background-image: url("../IMG/BG1.jpg");
     background-position: center;
+    position: relative;
+    
 }
 
 .visual .inner {
     height: 930px;
+    width: 1254px;
+    margin: auto;
+    position: relative;
 }
 
 .visual .aespa_crocs_img {
     position: absolute;
     top: 235px;
-    left: 250px;
+    left: 50px;
 }
 
 .visual .aespa_text {
     position: absolute;
     top: 370px;
-    right: 380px;
+    right: 100px;
 }
 
 
 .visual .btn {
     position: absolute;
     top: 560px;
-    right: 553px;
+    right: 275px;
 }
 
 .visual2 {
@@ -303,19 +315,22 @@ header .menu .search .material-symbols-outlined:hover {
 
 .visual2 > .inner {
     height: 930px;
+    width: 1254px;
+    margin: auto;
+    position: relative;
 }
 
 
 .visual2 .aespa_img {
     position: absolute;
     top: 200px;
-    right: 180px;
+    right: 0px;
 }
 
 .visual2 .aespa_text2 {
     position: absolute;
     top: 350px;
-    left: 200px;
+    left: 0px;
 }
 
 .visual .fade-in {
@@ -326,7 +341,10 @@ header .menu .search .material-symbols-outlined:hover {
     position: relative;
 }
 
-.promotion .inner {}
+.promotion .inner {
+    width: 1254px;
+    margin: auto;
+}
 
 .promotion h4 {
     display: flex;
@@ -344,7 +362,7 @@ header .menu .search .material-symbols-outlined:hover {
     width: 1254px;
     overflow: hidden;
     border-radius: 15px;
-    left: 250px;
+    
 }
 
 .promotion .swiper .swiper-wrapper {
@@ -381,11 +399,11 @@ header .menu .search .material-symbols-outlined:hover {
   transition: .4s;
 }
 .promotion .swiper-prev {
-  left: 43%;
+  left: 43.5%;
   margin-left: -480px;
 }
 .promotion .swiper-next {
-  right: 43%;
+  right: 43.5%;
   margin-right: -480px;
 }
 .promotion .swiper-prev:hover,
@@ -399,6 +417,12 @@ header .menu .search .material-symbols-outlined:hover {
     cursor: pointer;
 }
 
+.collaboration .inner {
+    width: 1254px;
+    margin: auto;
+
+}
+
 .collaboration .swiper {
     position: absolute;
     top: 800px;
@@ -406,7 +430,6 @@ header .menu .search .material-symbols-outlined:hover {
     width: 1254px;
     overflow: hidden;
     border-radius: 15px;
-    left: 250px;
 }
 
 .collaboration .swiper-wrapper {}
@@ -425,6 +448,12 @@ header .menu .search .material-symbols-outlined:hover {
 .products {
     position: relative;
     
+}
+
+.products .inner {
+    width: 1254px;
+    margin: auto;
+    position: relative;
 }
 .products .productcontent {
     cursor: pointer;
@@ -471,55 +500,52 @@ header .menu .search .material-symbols-outlined:hover {
 
 .product1 {
     position: absolute;
-    left: 250px;
     top: 100px;
 }
 
 .product2 {
     position: absolute;
-    left: 680px;
+    left: 428.5px;
     top: 100px;
 }
 
 .product3 {
     position: absolute;
-    right: 250px;
+    right: 0px;
     top: 100px;
 }
 
 .product4 {
     position: absolute;
-    left: 250px;
     top: 640px;
 }
 
 .product5 {
     position: absolute;
-    left: 680px;
+    left: 428.5px;
     top: 640px;
 }
 
 .product6 {
     position: absolute;
-    right: 250px;
+    right: 0px;
     top: 640px;
 }
 
 .product7 {
     position: absolute;
-    left: 250px;
     top: 1180px;
 }
 
 .product8 {
     position: absolute;
-    left: 680px;
+    left: 428.5px;
     top: 1180px;
 }
 
 .product9 {
     position: absolute;
-    right: 250px;
+    right: 0px;
     top:1180px;
 }
 
@@ -643,7 +669,7 @@ footer {
         height: 24px;
         left: 50%;
     
-        margin-top: -1px;
+        margin-top: -25px;
         margin-left: -60px;
     }
     
@@ -656,7 +682,7 @@ footer {
         display: flex;
         position: absolute;
         right: 0;
-        margin-top: -1px;
+        margin-top: -25px;
         flex-wrap: nowrap;
     }
 
@@ -664,22 +690,431 @@ footer {
         display: none;
     }
 
+    .visual .inner {
+        height: 930px;
+        width: 500px;
+        margin: auto;
+        position: relative;
+    }
+
     .visual .aespa_crocs_img {
         position: absolute;
         transform: scale(0.7);
-        top: 5vh;
+        top: 10vh;
+        left: -45px;
     }
 
     .visual .aespa_text {
         position: absolute;
         top: 550px;
-        left: 10%;
+        left: 12%;
     }
     
 
     .visual .btn {
         position: absolute;
         top: 730px;
+        left: 95px;
+        width: 190px;
     }
+    
+    .visual2 > .inner {
+        position: relative;
+        height: 850px;
+        width: 500px;
+        margin: auto;
+    }
+
+    .visual2 .aespa_img {
+        position: absolute;
+        transform: scale(0.77);
+        left: -47px;
+        top: 5px;
+    }
+    
+    .visual2 .aespa_text2 {
+        position: absolute;
+        top: 550px;
+        left: 12px;
+    }
+
+    .promotion .inner {
+        width: 500px;
+        margin: auto;
+        position: relative;
+    }
+
+    .promotion h4 {
+        display: flex;
+        font-size: 35px;
+        font-weight: 700;
+        justify-content: center;
+        margin-top: 80px;
+    
+    }
+
+    .promotion .swiper {
+        position: absolute;
+        margin-top: 80px;
+        height: 676px;
+        width: 500px;
+        overflow: hidden;
+        border-radius: 15px;
+        
+    }
+
+    .promotion .swiper-prev,
+    .promotion .swiper-next {
+        display: none;
+    }
+
+    .collaboration .swiper {
+        display: none;
+    }
+
+    .products .inner {
+        width: 500px;
+        margin: auto;
+        position: relative;
+    }
+
+    .products h4 {
+        display: flex;
+        font-size: 35px;
+        font-weight: 700;
+        justify-content: center;
+        margin-top: 853px;
+    }
+
+    .products h6 {
+        font-weight: 700;
+        font-size: 15px;
+        color: #a1a1a1;
+        margin-top: 33px;
+        margin-bottom: 7px;
+    }
+    
+    .products span {
+        font-weight: 400;
+        font-size: 18px;
+        color: #535353;
+        margin-bottom: 13px;
+    }
+    
+    .products p {
+        font-weight: 700;
+        font-size: 18px;
+        color: #535353;
+        margin-top: 8px;
+        margin-bottom: 38px;
+    }
+
+    .product1 {
+        transform: scale(1.2);
+        position: absolute;
+        top: 140px;
+        left: 55px;
+    }
+    
+    .product2 {
+        position: absolute;
+        left: 428.5px;
+        top: 100px;
+        display: none;
+    }
+    
+    .product3 {
+        position: absolute;
+        right: 0px;
+        top: 100px;
+        display: none;
+    }
+    
+    .product4 {
+        transform: scale(1.2);
+        position: absolute;
+        top: 790px;
+        left: 55px;
+    }
+    
+    .product5 {
+        position: absolute;
+        left: 428.5px;
+        top: 640px;
+        display: none;
+    }
+    
+    .product6 {
+        position: absolute;
+        right: 0px;
+        top: 640px;
+        display: none;
+    }
+    
+    .product7 {
+        transform: scale(1.2);
+        position: absolute;
+        top: 1430px;
+        left: 55px;
+    }
+    
+    .product8 {
+        position: absolute;
+        left: 428.5px;
+        top: 1180px;
+        display: none;
+    }
+    
+    .product9 {
+        position: absolute;
+        right: 0px;
+        top:1180px;
+        display: none;
+    }
+    
+    footer {
+        position: relative;
+        background-color: #5a5a5a;
+        border-top: 1px solid #333;
+        bottom: 0px;
+        top: 2100px;
+      }
+
+
+    
+    
+}
+
+/* mobile phone */
+@media screen and (max-width: 430px) {
+
+    header .mobilemenu .material-symbols-outlined {
+        color: white;
+        display: block;
+        margin-left: 50px;
+    }
+    
+
+    header .inner .logo {
+        display: flex;
+        position: absolute;
+        
+        width: 120px;
+        height: 24px;
+        left: 50%;
+    
+        margin-top: -25px;
+        margin-left: -60px;
+    }
+    
+
+    header .main-menu {
+        display: none;
+    }
+
+    header .menu {
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin-top: -25px;
+        flex-wrap: nowrap;
+    }
+
+    header .menu li .login{
+        display: none;
+    }
+
+    .visual .inner {
+        height: 930px;
+        width: 500px;
+        margin: auto;
+        position: relative;
+    }
+
+    .visual .aespa_crocs_img {
+        position: absolute;
+        transform: scale(0.7);
+        top: 10vh;
+        left: -45px;
+    }
+
+    .visual .aespa_text {
+        position: absolute;
+        top: 550px;
+        left: 12%;
+    }
+    
+
+    .visual .btn {
+        position: absolute;
+        top: 730px;
+        left: 95px;
+        width: 190px;
+    }
+    
+    .visual2 > .inner {
+        position: relative;
+        height: 850px;
+        width: 500px;
+        margin: auto;
+    }
+
+    .visual2 .aespa_img {
+        position: absolute;
+        transform: scale(0.77);
+        left: -47px;
+        top: 5px;
+    }
+    
+    .visual2 .aespa_text2 {
+        position: absolute;
+        top: 550px;
+        left: 12px;
+    }
+
+    .promotion .inner {
+        width: 500px;
+        margin: auto;
+        position: relative;
+    }
+
+    .promotion h4 {
+        display: flex;
+        font-size: 35px;
+        font-weight: 700;
+        justify-content: center;
+        margin-top: 80px;
+    
+    }
+
+    .promotion .swiper {
+        position: absolute;
+        margin-top: 80px;
+        height: 676px;
+        width: 500px;
+        overflow: hidden;
+        border-radius: 15px;
+        
+    }
+
+    .promotion .swiper-prev,
+    .promotion .swiper-next {
+        display: none;
+    }
+
+    .collaboration .swiper {
+        display: none;
+    }
+
+    .products .inner {
+        width: 500px;
+        margin: auto;
+        position: relative;
+    }
+
+    .products h4 {
+        display: flex;
+        font-size: 35px;
+        font-weight: 700;
+        justify-content: center;
+        margin-top: 853px;
+    }
+
+    .products h6 {
+        font-weight: 700;
+        font-size: 15px;
+        color: #a1a1a1;
+        margin-top: 33px;
+        margin-bottom: 7px;
+    }
+    
+    .products span {
+        font-weight: 400;
+        font-size: 18px;
+        color: #535353;
+        margin-bottom: 13px;
+    }
+    
+    .products p {
+        font-weight: 700;
+        font-size: 18px;
+        color: #535353;
+        margin-top: 8px;
+        margin-bottom: 38px;
+    }
+
+    .product1 {
+        transform: scale(1.2);
+        position: absolute;
+        top: 140px;
+        left: 55px;
+    }
+    
+    .product2 {
+        position: absolute;
+        left: 428.5px;
+        top: 100px;
+        display: none;
+    }
+    
+    .product3 {
+        position: absolute;
+        right: 0px;
+        top: 100px;
+        display: none;
+    }
+    
+    .product4 {
+        transform: scale(1.2);
+        position: absolute;
+        top: 790px;
+        left: 55px;
+    }
+    
+    .product5 {
+        position: absolute;
+        left: 428.5px;
+        top: 640px;
+        display: none;
+    }
+    
+    .product6 {
+        position: absolute;
+        right: 0px;
+        top: 640px;
+        display: none;
+    }
+    
+    .product7 {
+        transform: scale(1.2);
+        position: absolute;
+        top: 1430px;
+        left: 55px;
+    }
+    
+    .product8 {
+        position: absolute;
+        left: 428.5px;
+        top: 1180px;
+        display: none;
+    }
+    
+    .product9 {
+        position: absolute;
+        right: 0px;
+        top:1180px;
+        display: none;
+    }
+    
+    footer {
+        position: relative;
+        background-color: #5a5a5a;
+        border-top: 1px solid #333;
+        bottom: 0px;
+        top: 2100px;
+      }
+
+
+    
     
 }

@@ -46,7 +46,7 @@ new Swiper('.promotion .swiper', {
 
 new Swiper('.collaboration .swiper', {
     slidesPerView:4,
-    spaceBetween: 0,
+    spaceBetween: 20,
     loop:true,
     autoplay: {
         delay:4000
