@@ -25,7 +25,7 @@
 <!-- 폰트 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
 <!-- 아이콘 -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -64,13 +64,17 @@
         
         <div class="inner">
             
-            <div class="mobilemenu">
-                <a href="#" class="material-symbols-outlined">Menu</a>
+            <div class="mobilemenu" id="mobileMenu">
+                <a href="#" class="material-symbols-outlined" onclick="showSidebar()">Menu</a>
             </div>
 
             <a href="/" class="logo">
                 <img src="./IMG/crocs_logo.png" alt="CROCS">
             </a>
+
+        
+
+            <!-- 웹메뉴 -->
             
             <ul class="main-menu">
                 <li class="item">
@@ -253,6 +257,161 @@
         </div>
     </header>
 
+    <!-- 모바일 사이드바 -->
+    <div class="sideBarBackground" id="sideBarBackground" onclick="removeSidebar()" ></div>
+    <div class="side-bar" id="sideBar">
+       <div class="inner">
+        <h6>Crocs Korea의 다양한 멤버십 혜택을 누려보세요.</h6>
+        <a href="">로그인하기
+        </a>
+        <ul class="mobile-menu">
+            <li class="item">
+                <div class="item__name">Woman
+                    <div class="material-symbols-outlined">Expand_more</div>
+                </div>
+                <div class="item__contents">
+                    <div class="contents__menu">
+                        <ul class="inner">
+                            <li>
+                                <h4>여성 컬랙션</h4>
+                                <ul>
+                                    <li>클래식</li>
+                                    <li>퍼에버 크러쉬</li>
+                                    <li>딜런 버니쉬드</li>
+                                    <li>스톰프</li>
+                                    <li>라인드 익스클루시브</li>
+                                    <li>하이츠</li>
+                                    <li>온라인 익스클루시브</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="item__name">Man
+                    <div class="material-symbols-outlined">Expand_more</div>
+                </div>
+                <div class="item__contents">
+                    <div class="contents__menu">
+                        <ul class="inner">
+                            <li>
+                                <h4>남성 컬랙션</h4>
+                                <ul>
+                                    <li>클래식</li>
+                                    <li>퍼에버 크러쉬</li>
+                                    <li>딜런 버니쉬드</li>
+                                    <li>스톰프</li>
+                                    <li>라인드 익스클루시브</li>
+                                    <li>하이츠</li>
+                                    <li>온라인 익스클루시브</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="item__name">Kids
+                    <div class="material-symbols-outlined">Expand_more</div>
+                </div>
+                <div class="item__contents">
+                    <div class="contents__menu">
+                        <ul class="inner">
+                            <li>
+                                <h4>토틀러(165mm 이하)</h4>
+                                <ul>
+                                    <li>클로그</li>
+                                    <li>샌들 / 웨지</li>
+                                    <li>부츠</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>키즈 (175mm 이하)</h4>
+                                <ul>
+                                    <li>클로그</li>
+                                    <li>샌들 / 웨지</li>
+                                    <li>부츠</li>
+                                </ul>
+                                <li>
+                                    <h4>키즈 컬랙션</h4>
+                                    <ul>
+                                        <li>라이트닝 맥퀸</li>
+                                        <li>스타워즈</li>
+                                        <li>털안감 슈즈</li>
+                                        <li>클래식</li>
+                                        <li>캐릭터/라이센스</li>
+                                        <li>LED 컬렉션</li>
+                                        <li>온라인 익스클루시브</li>
+                                    </ul>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="item__name">Jibits Charms
+                    <div class="material-symbols-outlined">Expand_more</div>
+                </div>
+                <div class="item__contents">
+                    <div class="contents__menu">
+                        <ul class="inner">
+                            <li>
+                                <h4>지비츠 참 컬렉션</h4>
+                                <ul>
+                                    <li>캐릭터</li>
+                                    <li>메탈 & 주얼리</li>
+                                    <li>동물 & 식물</li>
+                                    <li>심볼 & 메세지</li>
+                                    <li>한국 단독 K 지비츠 참</li>
+                                    <li>라이센스 지비츠 참</li>
+                                    <li>LED 지비츠 참</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>신상품</h4>
+                                <ul>
+                                    <li>클래식</li>
+                                    <li>퍼에버 크러쉬</li>
+                                    <li>딜런 버니쉬드</li>
+                                    <li>스톰프</li>
+                                    <li>라인드 익스클루시브</li>
+                                    <li>하이츠</li>
+                                    <li>온라인 익스클루시브</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="item__name">Sale
+                    <div class="material-symbols-outlined">Expand_more</div>
+                </div>
+                <div class="item__contents">
+                    <div class="contents__menu">
+                        <ul class="inner">
+                            <li>
+                                <h4>가격대</h4>
+                                <ul>
+                                    <li>1만원 이하</li>
+                                    <li>10,000~20,000</li>
+                                    <li>20,000~30,000</li>
+                                    <li>30,000~40,000</li>
+                                    <li>40,000~50,000</li>
+                                    <li>50,000원 이상</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+       </div>
+
+    </div>
+
     <!-- 비주얼섹션 1-->
     <section class="visual">
         <div class="inner">
@@ -331,64 +490,74 @@
                 </div>
             </div>
         </div>
+
+
+
 <!-- 프로덕트 -->
         <div class="products ">
-            <h4>PRODUCTS</h4>
             <div class="inner">
-                <div class="product1">
-                    <img src="./IMG/crocs1.png" alt="">
-                    <h6>온라인 한정</h6>
-                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
-                    <p>₩109,000</p>
+                <h4>PRODUCTS</h4>
+                <div class="main">
+                    <div class="grid-container">
+                        <div class="product-card">
+                            <img src="./IMG/crocs1.png" alt="">
+                            <h6>온라인 한정</h6>
+                            <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                            <p>₩109,000</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="./IMG/crocs2.png" alt="">
+                            <h6>온라인 한정</h6>
+                            <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                            <p>₩109,000</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="./IMG/crocs3.png" alt="">
+                            <h6>온라인 한정</h6>
+                            <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                            <p>₩109,000</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="./IMG/crocs4.png" alt="">
+                            <h6>온라인 한정</h6>
+                            <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                            <p>₩109,000</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="./IMG/crocs5.png" alt="">
+                            <h6>온라인 한정</h6>
+                            <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                            <p>₩109,000</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="./IMG/crocs6.png" alt="">
+                            <h6>온라인 한정</h6>
+                            <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                            <p>₩109,000</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="./IMG/crocs7.png" alt="">
+                            <h6>온라인 한정</h6>
+                            <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                            <p>₩109,000</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="./IMG/crocs8.png" alt="">
+                            <h6>온라인 한정</h6>
+                            <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                            <p>₩109,000</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="./IMG/crocs9.png" alt="">
+                            <h6>온라인 한정</h6>
+                            <span>클래식 플랫폼 라인드 데이지 클로그</span>
+                            <p>₩109,000</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="product2">
-                    <img src="./IMG/crocs2.png" alt="">
-                    <h6>온라인 한정</h6>
-                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
-                    <p>₩109,000</p>
-                </div>
-                <div class="product3">
-                    <img src="./IMG/crocs3.png" alt="">
-                    <h6>온라인 한정</h6>
-                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
-                    <p>₩109,000</p>
-                </div>
-                <div class="product4">
-                    <img src="./IMG/crocs4.png" alt="">
-                    <h6>온라인 한정</h6>
-                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
-                    <p>₩109,000</p>
-                </div>
-                <div class="product5">
-                    <img src="./IMG/crocs5.png" alt="">
-                    <h6>온라인 한정</h6>
-                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
-                    <p>₩109,000</p>
-                </div>
-                <div class="product6">
-                    <img src="./IMG/crocs6.png" alt="">
-                    <h6>온라인 한정</h6>
-                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
-                    <p>₩109,000</p>
-                </div>
-                <div class="product7">
-                    <img src="./IMG/crocs7.png" alt="">
-                    <h6>온라인 한정</h6>
-                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
-                    <p>₩109,000</p>
-                </div>
-                <div class="product8">
-                    <img src="./IMG/crocs8.png" alt="">
-                    <h6>온라인 한정</h6>
-                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
-                    <p>₩109,000</p>
-                </div>
-                <div class="product9">
-                    <img src="./IMG/crocs9.png" alt="">
-                    <h6>온라인 한정</h6>
-                    <span>클래식 플랫폼 라인드 데이지 클로그</span>
-                    <p>₩109,000</p>
-                </div>
+            
+
+
             </div>
         </div>
 

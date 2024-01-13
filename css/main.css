@@ -133,6 +133,10 @@ header .inner .logo {
     margin-left: -60px;
 }
 
+header .mobile-menu {
+    display: none;
+}
+
 header .main-menu {
     display: flex;
     position: absolute;
@@ -272,6 +276,10 @@ header .menu .search .material-symbols-outlined:hover {
     color: #d5d5d5;
 }
 
+.side-bar {
+    display: none;
+}
+
 
 .visual {
     background-image: url("../IMG/BG1.jpg");
@@ -289,8 +297,8 @@ header .menu .search .material-symbols-outlined:hover {
 
 .visual .aespa_crocs_img {
     position: absolute;
-    top: 235px;
-    left: 50px;
+    top: 25%;
+    left: 5%;
 }
 
 .visual .aespa_text {
@@ -339,33 +347,37 @@ header .menu .search .material-symbols-outlined:hover {
 
 .promotion {
     position: relative;
+    display: flex;
+    justify-content: center;
+    height: 900px;
 }
 
 .promotion .inner {
     width: 1254px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .promotion h4 {
-    display: flex;
     font-size: 30px;
     font-weight: 700;
-    justify-content: center;
-    margin-top: 100px;
+    margin-top: 80px;
 
 }
 
 .promotion .swiper {
+    top: 200px;
     position: absolute;
-    margin-top: 100px;
     height: 676px;
     width: 1254px;
     overflow: hidden;
     border-radius: 15px;
-    
+    display: flex;
+    justify-content: center;
 }
 
 .promotion .swiper .swiper-wrapper {
+    
 
 }
 
@@ -390,7 +402,7 @@ header .menu .search .material-symbols-outlined:hover {
   position: absolute;
   /* Swiper Container 높이의 절반만큼 끌어올림 */
   /* 버튼 높이의 절반만큼 추가로 끌어올림 */
-  top: 435px;
+  top: 550px;
   z-index: 1;
   cursor: pointer;
   display: flex;
@@ -415,6 +427,7 @@ header .menu .search .material-symbols-outlined:hover {
 .collaboration {
     position: relative;
     cursor: pointer;
+    height: 167px;
 }
 
 .collaboration .inner {
@@ -425,7 +438,6 @@ header .menu .search .material-symbols-outlined:hover {
 
 .collaboration .swiper {
     position: absolute;
-    top: 800px;
     height: 167.09px;
     width: 1254px;
     overflow: hidden;
@@ -436,38 +448,57 @@ header .menu .search .material-symbols-outlined:hover {
 
 .collaboration .swiper-slide {}
 
-.products h4 {
-    display: flex;
-    font-size: 30px;
-    font-weight: 700;
-    justify-content: center;
-    margin-top: 1070px;
-
-}
 
 .products {
     position: relative;
-    
+    display: flex;
+    justify-content: center;
+    height: 2000px;
 }
 
 .products .inner {
     width: 1254px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
     position: relative;
 }
-.products .productcontent {
+
+.products h4 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 80px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개의 열 */
+    grid-template-rows: repeat(3, auto); /* 3개의 행, 자동으로 높이 조절 */
+    gap: 31px; /* 열과 행 사이의 간격 */
+}
+.product-card {
+    display: inline-block;
+    width: 33.333;
+    height: 550px;
+    box-sizing: border-box;
     cursor: pointer;
 }
 
-.products img {
-    border-radius: 10px;
-    cursor: pointer;
+.product-card:hover {
+    scale: 1.05;
+    transition: .4s;
 }
 
-.products img:hover {
-    transform: scale(1.04);
-    transition: 0.4s;
-    
+.product-card img {
+    width: 100%;
+
 }
 
 .products h6 {
@@ -478,19 +509,19 @@ header .menu .search .material-symbols-outlined:hover {
     margin-bottom: 7px;
 }
 
-.products span {
+.product-card span {
     font-weight: 400;
     font-size: 15px;
     color: #535353;
     margin-bottom: 10px;
 }
 
-.products span:hover {
+.product-card span:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
-.products p {
+.product-card p {
     font-weight: 700;
     font-size: 15px;
     color: #535353;
@@ -498,56 +529,7 @@ header .menu .search .material-symbols-outlined:hover {
     margin-bottom: 35px;
 }
 
-.product1 {
-    position: absolute;
-    top: 100px;
-}
 
-.product2 {
-    position: absolute;
-    left: 428.5px;
-    top: 100px;
-}
-
-.product3 {
-    position: absolute;
-    right: 0px;
-    top: 100px;
-}
-
-.product4 {
-    position: absolute;
-    top: 640px;
-}
-
-.product5 {
-    position: absolute;
-    left: 428.5px;
-    top: 640px;
-}
-
-.product6 {
-    position: absolute;
-    right: 0px;
-    top: 640px;
-}
-
-.product7 {
-    position: absolute;
-    top: 1180px;
-}
-
-.product8 {
-    position: absolute;
-    left: 428.5px;
-    top: 1180px;
-}
-
-.product9 {
-    position: absolute;
-    right: 0px;
-    top:1180px;
-}
 
 
 /* footer */
@@ -556,7 +538,6 @@ footer {
     background-color: #5a5a5a;
     border-top: 1px solid #333;
     bottom: 0px;
-    top: 1800px;
   }
   footer .inner {
     padding: 40px 0 60px 0;
@@ -650,9 +631,12 @@ footer {
     justify-content: center;
     align-items: center;
   }
+/* ipad */
 
-/* mobile phone */
-@media screen and (max-width: 1023px) {
+
+
+/* ipad*/
+@media screen and (max-width: 1024px) {
 
     header .mobilemenu .material-symbols-outlined {
         color: white;
@@ -678,6 +662,7 @@ footer {
         display: none;
     }
 
+
     header .menu {
         display: flex;
         position: absolute;
@@ -690,431 +675,271 @@ footer {
         display: none;
     }
 
-    .visual .inner {
-        height: 930px;
-        width: 500px;
-        margin: auto;
+    .sideBarBackground {
+        z-index: 9;
+        position: absolute;
+        width: 100%;
+        height: 5240px;
+        background-color:rgba(0,0,0,.5);
+        display: none;
+    }
+
+    .showSideBarBackground {
+        display: block;
+    }
+
+    .side-bar {
+        position: fixed;
+        display: block;
+        background-color: rgb(0, 0, 0); 
+        height: 100%;
+        position: fixed;
+        width: 350px;
+        z-index: 10;
+        left: -400px;
+        transition: left 0.5s;
+    }
+
+    .showsidebar {
+        left: 0px;
+    }
+
+
+    .side-bar .inner {
+        width: 350px;
+        height: 95%;
+        margin-left: 25px;
         position: relative;
+    }
+
+    .side-bar h6 {
+        color: white;
+        font-size: 15px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .side-bar a {
+        color: white;
+        font-size: 25px;
+        margin-bottom: 50px;
+        font-weight: 700;
+    }
+
+
+    .side-bar .mobile-menu .item .item__name {
+        display: flex;
+        justify-content: space-between;
+        color: rgb(160, 160, 160);
+        height: 40px;
+        width: 300px;
+        margin-top: 30px;
+        font-size: 25px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .side-bar .mobile-menu .item .item__name .material-symbols-outlined{
+        color: rgb(160, 160, 160);
+        height: 40px;
+        font-size: 25px;
+        cursor: pointer;
+        transition: rotate .5s;
+
+    }
+
+    .flip {
+        transform: rotate(180deg);
+    }
+
+
+    .side-bar .mobile-menu .item .item__contents {
+        width: 100%;
+        display: none;
+        transition: 0.5s;
+    }
+
+    .more {
+        display: block;
+    }
+
+    .side-bar .mobile-menu .item .item__contents .contents__menu > ul > li h4 {
+        padding: 12px 0 12px 0;
+        font-size: 16px;
+        color: rgb(160, 160, 160);
+    }
+
+    .side-bar .mobile-menu .item .item__contents .contents__menu > ul > li ul li {
+        padding: 5px 0 5px 0;
+        font-size: 15px;
+        color: rgb(245, 245, 245);
+        cursor: pointer;
+    }
+
+    .visual > .inner {
+        position: relative;
+        height: 620px;
+        width: 90%;
+        margin: auto;
     }
 
     .visual .aespa_crocs_img {
         position: absolute;
-        transform: scale(0.7);
-        top: 10vh;
-        left: -45px;
+        width: 40%;
+        top: 200px;
+        left: 5%;
     }
 
     .visual .aespa_text {
         position: absolute;
-        top: 550px;
-        left: 12%;
+        width: 40%;
+        top: 230px;
+        right: 4%;
     }
     
 
     .visual .btn {
         position: absolute;
-        top: 730px;
-        left: 95px;
-        width: 190px;
+        top: 65%;
+        right: 15.5%;
+        width: 25%;
+        font-size: 90%;
     }
     
     .visual2 > .inner {
         position: relative;
-        height: 850px;
-        width: 500px;
+        height: 620px;
+        width: 90%;
         margin: auto;
     }
 
     .visual2 .aespa_img {
         position: absolute;
-        transform: scale(0.77);
-        left: -47px;
-        top: 5px;
+        width: 48%;
+        right: 2%;
+        top: 120px;
     }
     
     .visual2 .aespa_text2 {
         position: absolute;
-        top: 550px;
-        left: 12px;
-    }
-
-    .promotion .inner {
-        width: 500px;
-        margin: auto;
-        position: relative;
-    }
-
-    .promotion h4 {
-        display: flex;
-        font-size: 35px;
-        font-weight: 700;
-        justify-content: center;
-        margin-top: 80px;
-    
+        width: 40%;
+        top: 230px;
+        left: 2%;
     }
 
     .promotion .swiper {
-        position: absolute;
-        margin-top: 80px;
-        height: 676px;
-        width: 500px;
-        overflow: hidden;
-        border-radius: 15px;
-        
+        width: 90%;
     }
 
     .promotion .swiper-prev,
     .promotion .swiper-next {
+    display: none;
+    }
+
+    .collaboration {
         display: none;
     }
 
-    .collaboration .swiper {
-        display: none;
+    .products {
+        height: 3000px;
     }
 
     .products .inner {
-        width: 500px;
-        margin: auto;
-        position: relative;
-    }
-
-    .products h4 {
-        display: flex;
-        font-size: 35px;
-        font-weight: 700;
-        justify-content: center;
-        margin-top: 853px;
-    }
-
-    .products h6 {
-        font-weight: 700;
-        font-size: 15px;
-        color: #a1a1a1;
-        margin-top: 33px;
-        margin-bottom: 7px;
+        width: 90%;
     }
     
-    .products span {
-        font-weight: 400;
-        font-size: 18px;
-        color: #535353;
-        margin-bottom: 13px;
-    }
-    
-    .products p {
-        font-weight: 700;
-        font-size: 18px;
-        color: #535353;
-        margin-top: 8px;
-        margin-bottom: 38px;
-    }
-
-    .product1 {
-        transform: scale(1.2);
-        position: absolute;
-        top: 140px;
-        left: 55px;
-    }
-    
-    .product2 {
-        position: absolute;
-        left: 428.5px;
-        top: 100px;
-        display: none;
-    }
-    
-    .product3 {
-        position: absolute;
-        right: 0px;
-        top: 100px;
-        display: none;
-    }
-    
-    .product4 {
-        transform: scale(1.2);
-        position: absolute;
-        top: 790px;
-        left: 55px;
-    }
-    
-    .product5 {
-        position: absolute;
-        left: 428.5px;
-        top: 640px;
-        display: none;
-    }
-    
-    .product6 {
-        position: absolute;
-        right: 0px;
-        top: 640px;
-        display: none;
-    }
-    
-    .product7 {
-        transform: scale(1.2);
-        position: absolute;
-        top: 1430px;
-        left: 55px;
-    }
-    
-    .product8 {
-        position: absolute;
-        left: 428.5px;
-        top: 1180px;
-        display: none;
-    }
-    
-    .product9 {
-        position: absolute;
-        right: 0px;
-        top:1180px;
-        display: none;
-    }
-    
-    footer {
-        position: relative;
-        background-color: #5a5a5a;
-        border-top: 1px solid #333;
-        bottom: 0px;
-        top: 2100px;
-      }
-
 
     
-    
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 3개의 열 */
+    }
+
+    .product-card {
+        width: 50;
+        height: 520px;
+    }
+
+    .product-card img {
+        width: 100%;
+    }
 }
 
-/* mobile phone */
+
+/* mobile*/
 @media screen and (max-width: 430px) {
 
-    header .mobilemenu .material-symbols-outlined {
-        color: white;
-        display: block;
-        margin-left: 50px;
-    }
-    
-
-    header .inner .logo {
-        display: flex;
-        position: absolute;
-        
-        width: 120px;
-        height: 24px;
-        left: 50%;
-    
-        margin-top: -25px;
-        margin-left: -60px;
-    }
-    
-
-    header .main-menu {
+    .top-banner {
         display: none;
     }
+
+    header {
+        margin-top: 0px;
+        height: 75px;
+    }
+
+    header .mobilemenu .material-symbols-outlined {
+        margin-left: 30px;
+    }
+
 
     header .menu {
-        display: flex;
-        position: absolute;
-        right: 0;
-        margin-top: -25px;
-        flex-wrap: nowrap;
+        display: none
     }
 
-    header .menu li .login{
-        display: none;
-    }
 
-    .visual .inner {
-        height: 930px;
-        width: 500px;
-        margin: auto;
-        position: relative;
+
+    .visual > .inner {
+        height: 667px;
     }
 
     .visual .aespa_crocs_img {
-        position: absolute;
-        transform: scale(0.7);
-        top: 10vh;
-        left: -45px;
+        width: 70%;
+        top: 130px;
+        left: 16%;
     }
 
     .visual .aespa_text {
-        position: absolute;
-        top: 550px;
-        left: 12%;
+        width: 70%;
+        top: 380px;
+        right: 12%;
     }
-    
 
     .visual .btn {
-        position: absolute;
-        top: 730px;
-        left: 95px;
-        width: 190px;
+        width: 180px;
+        left: 24%;
+        top: 520px;
     }
-    
-    .visual2 > .inner {
-        position: relative;
-        height: 850px;
-        width: 500px;
-        margin: auto;
+
+    .visual2 > .inner  {
+        height: 667px;
     }
 
     .visual2 .aespa_img {
-        position: absolute;
-        transform: scale(0.77);
-        left: -47px;
-        top: 5px;
+        width: 80%;
+        right: 10%;
+        top: 70px;
     }
-    
+
     .visual2 .aespa_text2 {
-        position: absolute;
-        top: 550px;
-        left: 12px;
+        width: 80%;
+        top: 430px;
+        left: 10%;
     }
 
-    .promotion .inner {
-        width: 500px;
-        margin: auto;
-        position: relative;
+    .promotion .swiper {}
+
+    .grid-container {
+        gap: 15px;
     }
 
-    .promotion h4 {
-        display: flex;
-        font-size: 35px;
-        font-weight: 700;
-        justify-content: center;
-        margin-top: 80px;
-    
+    .product-card {
+        height: 300px;
     }
 
-    .promotion .swiper {
-        position: absolute;
-        margin-top: 80px;
-        height: 676px;
-        width: 500px;
-        overflow: hidden;
-        border-radius: 15px;
-        
+    
+
+    .products {
+        height: 1790px;
     }
 
-    .promotion .swiper-prev,
-    .promotion .swiper-next {
-        display: none;
-    }
-
-    .collaboration .swiper {
-        display: none;
-    }
-
-    .products .inner {
-        width: 500px;
-        margin: auto;
-        position: relative;
-    }
-
-    .products h4 {
-        display: flex;
-        font-size: 35px;
-        font-weight: 700;
-        justify-content: center;
-        margin-top: 853px;
-    }
-
-    .products h6 {
-        font-weight: 700;
-        font-size: 15px;
-        color: #a1a1a1;
-        margin-top: 33px;
-        margin-bottom: 7px;
-    }
-    
-    .products span {
-        font-weight: 400;
-        font-size: 18px;
-        color: #535353;
-        margin-bottom: 13px;
-    }
-    
-    .products p {
-        font-weight: 700;
-        font-size: 18px;
-        color: #535353;
-        margin-top: 8px;
-        margin-bottom: 38px;
-    }
-
-    .product1 {
-        transform: scale(1.2);
-        position: absolute;
-        top: 140px;
-        left: 55px;
-    }
-    
-    .product2 {
-        position: absolute;
-        left: 428.5px;
-        top: 100px;
-        display: none;
-    }
-    
-    .product3 {
-        position: absolute;
-        right: 0px;
-        top: 100px;
-        display: none;
-    }
-    
-    .product4 {
-        transform: scale(1.2);
-        position: absolute;
-        top: 790px;
-        left: 55px;
-    }
-    
-    .product5 {
-        position: absolute;
-        left: 428.5px;
-        top: 640px;
-        display: none;
-    }
-    
-    .product6 {
-        position: absolute;
-        right: 0px;
-        top: 640px;
-        display: none;
-    }
-    
-    .product7 {
-        transform: scale(1.2);
-        position: absolute;
-        top: 1430px;
-        left: 55px;
-    }
-    
-    .product8 {
-        position: absolute;
-        left: 428.5px;
-        top: 1180px;
-        display: none;
-    }
-    
-    .product9 {
-        position: absolute;
-        right: 0px;
-        top:1180px;
-        display: none;
-    }
-    
-    footer {
-        position: relative;
-        background-color: #5a5a5a;
-        border-top: 1px solid #333;
-        bottom: 0px;
-        top: 2100px;
-      }
-
-
-    
-    
 }

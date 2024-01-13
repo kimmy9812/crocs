@@ -8,6 +8,23 @@ function toggleBanner() {
   header.classList.toggle('collapsed2');
 }
 
+function showSidebar() {
+  const mobileMenu = document.getElementById('mobileMenu');
+  const sideBar = document.getElementById('sideBar');
+  const sideBarBackground = document.getElementById('sideBarBackground');
+  sideBar.classList.toggle('showsidebar',);
+  sideBarBackground.classList.toggle('showSideBarBackground',);
+}
+
+function removeSidebar() {
+  const sideBar = document.getElementById('sideBar');
+  const sideBarBackground = document.getElementById('sideBarBackground');
+  sideBar.classList.remove('showsidebar');
+  sideBarBackground.classList.remove('showSideBarBackground');
+}
+
+
+
 const fadeEls = document.querySelectorAll('.visual .fade-in');
 fadeEls.forEach(function (fadeEl, index) {
     gsap.to(fadeEl, 1, {
